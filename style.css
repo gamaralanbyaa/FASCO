@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #033b5b;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #033b5b;
+    color: #fff;
+    padding: 30px 10px;
+    border-radius: 0 0 40px 40px;
+    animation: slideDown 1s ease-out;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.services {
+    margin-top: 40px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.services h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #033b5b;
+}
+
+.services ul {
+    list-style: none;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.services li {
+    background-color: #e7f1fa;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.services li:hover {
+    transform: scale(1.05);
+    background-color: #d3e9f9;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+footer a {
+    color: #033b5b;
+    text-decoration: none;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
